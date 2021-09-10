@@ -6,26 +6,72 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+   <script>hljs.initHighlightingOnLoad();</script>
    <title>CV</title>
 </head>
 
 <body>
    <div class="wrapper">
       <header>
-         <img class="avatar" src="images/avatar.jpg" alt="photo" />
-         <h1>Irina Boozhan</h1>
-
-         <p>telegram: <a title="Telegram" href="tg://resolve?domain=Irina_Boozhan">@Irina_Boozhan</a></p>
-         <p>e-mail:<a title="Email" href="irina.boozhan@gmail.com">irina.boozhan@gmail.com> </a></p>
-         <p>phone: +375 29 5736578</p>
-
-
+         <nav>
+            <ul class="menu">
+               <li><a>About me</a></li>
+               <li><a>Career</a></li>
+               <li><a>Skills and education</a></li>
+               <li><a>Code examples</a></li>
+               <li><a>My projects</a></li>
+               <li><a>Video</a></li>
+            </ul>
+         </nav>
       </header>
 
       <main>
+         <section class="contacts">
+            <div class="contacts__content">
+               <h1>About me</h1>
+               <div>Hey! My name is <b>Irina Boozhan</b>.</div>
+               <div> I am from Minsk. I studied at the Belarusian National Technical
+                  University. After that I taught there Standardization and Information systems. At the same time, I
+                  worked as a
+                  junior business analyst in Wargaming.
+               </div>
+               <div>Currently on maternity leave with two babies. There were many searches. And I found myself and the
+                  <b>front-end</b>. I really like to combine creativity and mathematical logic.
+               </div>
+               <div>
+                  Now I am learning every day to become a professional front-end developer tomorrow:)</div>
+            </div>
 
-         <h2>Education, job, about me:</h2>
-         <p> I'm standardization and quality management engineer (magistr, BNTY, 2007-2013).
+            <div class="contacts__avatar">
+               <div class="flipper">
+                  <div class="front">
+                     <img class="avatar" src="images/avatar.jpg" alt="photo" />
+                  </div>
+                  <div class="back">
+                     <h3>Contacts</h3>
+                     <p>telegram:
+                        <a title="Telegram" href="tg://resolve?domain=Irina_Boozhan">
+                           @Irina_Boozhan
+                        </a>
+                     </p>
+                     <p>e-mail:
+                        <a title="Email" href="irina.boozhan@gmail.com">
+                           irina.boozhan@gmail.com
+                        </a>
+                     </p>
+                     <p>phone: +375 29 5736578</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+
+         <h2>Career (not front-end)</h2>
+
+         <p> I'm standardization and quality management engineer (magistr, 2007-2013).
+            I worked:
          <ul>
             <li>- 2013-2014: Junior business analyst (Wargaming)</li>
             <li>- 2013-2016: Teacher at BNTU (standardization, development of standards, databases and programming
@@ -62,9 +108,50 @@
                <li>- some JS Intensives from Glo Academy</li>
             </ul>
          </details>
-
-
          <h3>English: A2</h3>
+
+         <section class="code">
+
+            <div>
+               <h4>JS-code. Implementation a function that determines whether a string that contains only letters is an
+                  isogram.
+               </h4>
+               <pre><code>function isIsogram(str) {
+   let strNew = str.replace(/[^A-Z]/gi, '').toLowerCase();
+   let map = {};
+   for (let i = 0; i &lt; strNew.length; i++) {
+      let symbol = strNew[i];
+      map[symbol] = (map[symbol] || 0) + 1;
+      if (map[symbol] > 1) 
+         { return false; }
+      }
+   return true;
+   }</code>
+</pre>
+            </div>
+
+            <div>
+               <h4>React-code. Search implementation</h4>
+               <pre> <code>const [value, setValue] = useState('');
+      const filterCharacters = posts.filter(posts => {
+         return posts.name.toLowerCase().includes(value.toLowerCase())
+      })     
+      if (value)
+         return ( &lt;div className='form'&gt;
+                  &lt;form className='searchForm'&gt;
+                     &lt;input
+                        type='text'
+                        className='searchInput'
+                        placeholder='Search characters'
+                        onChange={(e) => { setValue(e.target.value) }}
+                     /&gt;
+                  &lt;/form&gt;
+               &lt;/div&gt;)
+            </code></pre>
+            </div>
+
+         </section>
+
 
       </main>
       <footer>
