@@ -14,36 +14,21 @@
 
 <body>
    <div class="wrapper">
-      <header>
-         <nav>
-            <ul class="menu">
+      <header class="header">
+         <nav class="nav">
+            <ul class="nav__menu">
                <li><a>About me</a></li>
                <li><a>Career</a></li>
-               <li><a>Skills and education</a></li>
-               <li><a>Code examples</a></li>
-               <li><a>My projects</a></li>
+               <li><a>Skills</a></li>
+               <li><a>Code</a></li>
+               <li><a>Projects</a></li>
                <li><a>Video</a></li>
             </ul>
          </nav>
       </header>
 
       <main>
-         <section class="contacts">
-            <div class="contacts__content">
-               <h1>About me</h1>
-               <div>Hey! My name is <b>Irina Boozhan</b>.</div>
-               <div> I am from Minsk. I studied at the Belarusian National Technical
-                  University. After that I taught there Standardization and Information systems. At the same time, I
-                  worked as a
-                  junior business analyst in Wargaming.
-               </div>
-               <div>Currently on maternity leave with two babies. There were many searches. And I found myself and the
-                  <b>front-end</b>. I really like to combine creativity and mathematical logic.
-               </div>
-               <div>
-                  Now I am learning every day to become a professional front-end developer tomorrow:)</div>
-            </div>
-
+         <section id="contacts" class="contacts">
             <div class="contacts__avatar">
                <div class="flipper">
                   <div class="front">
@@ -51,6 +36,7 @@
                   </div>
                   <div class="back">
                      <h3>Contacts</h3>
+                     <p>Location: Minsk, Belarus</p>
                      <p>telegram:
                         <a title="Telegram" href="tg://resolve?domain=Irina_Boozhan">
                            @Irina_Boozhan
@@ -65,57 +51,102 @@
                   </div>
                </div>
             </div>
+
+            <div class="contacts__content">
+               <h1>About me</h1>
+               <div>Hey! My name is <b>Irina Boozhan</b>.</div>
+               <div> I am from Minsk. I studied at the Belarusian National Technical
+                  University. After that I taught there Standardization and Information systems. At the same time, I
+                  worked as a
+                  junior business analyst in Wargaming.
+               </div>
+               <div>Currently on maternity leave with two babies. There were many searches. And I found myself and the
+                  <b>front-end</b>. I really like to combine creativity and mathematical logic.
+               </div>
+               <div>
+                  Now I am learning every day to become a professional front-end developer tomorrow :)</div>
+            </div>
+
+
          </section>
+         <section id="career" class="career">
+            <h2>Career (not front-end)</h2>
 
-
-         <h2>Career (not front-end)</h2>
-
-         <p> I'm standardization and quality management engineer (magistr, 2007-2013).
-            I worked:
-         <ul>
-            <li>- 2013-2014: Junior business analyst (Wargaming)</li>
-            <li>- 2013-2016: Teacher at BNTU (standardization, development of standards, databases and programming
-               languages(MS
-               Access SQL, HTML, CSS))</li>
-            <li>- 2016 to the presen: on maternity leave</li>
-         </ul>
-
-         <details open>
-            <summary>Knowleges</summary>
+            <p> I'm standardization and quality management engineer (magistr, 2007-2013).
+               I worked:
             <ul>
-               <li>- HTML5</li>
-               <li>- CSS3 (Grid, Flex,+SCSS)</li>
-               <li>- Java Scrilit</li>
-               <li>- React JS</li>
-               <li>- GIT</li>
-               <li>- Agile, ITIL Foundation</li>
-               <li>- MS Access SQL</li>
+               <li>- 2013-2014: Junior business analyst (Wargaming)</li>
+               <li>- 2013-2016: Teacher at BNTU (standardization, development of standards, databases and programming
+                  languages(MS
+                  Access SQL, HTML, CSS))</li>
+               <li>- 2016 to the presen: on maternity leave</li>
             </ul>
-         </details>
-         <details>
-            <summary>Courses</summary>
+         </section>
+         <section id="skils" class="skils">
+            <h2>Skills and education</h2>
+
+            <h3>Skills</h3>
+            <ul>
+               <li>
+                  <p class="skill">
+                     <span class="skill__inner html">
+                        <span class="level">85%</span>HTML
+                     </span>
+                  </p>
+               </li>
+               <li>
+                  <p class="skill">
+                     <span class="skill__inner css">
+                        <span class="level">70%</span>CSS3 + SCSS
+                     </span>
+                  </p>
+               </li>
+               <li>
+                  <p class="skill">
+                     <span class="skill__inner js">
+                        <span class="level">40%</span>JavaScript
+                     </span>
+                  </p>
+               </li>
+               <li>
+                  <p class="skill">
+                     <span class="skill__inner react">
+                        <span class="level">30%</span>React
+                     </span>
+                  </p>
+               </li>
+               <li>
+                  <p class="skill">
+                     <span class="skill__inner git">
+                        <span class="level">30%</span>Git
+                     </span>
+                  </p>
+               </li>
+            </ul>
+
+            <h3>Courses</h3>
             <ul>
                <li>- IT College Digital Unicorn «Front-End development» (10.2020-08.2021)</li>
                <li>- React JS. Practical Course (+ Hooks, Classes, Redux) (from V.Minin, Udemy)</li>
                <li>- JavaScript 2021 (from V.Minin, Udemy)</li>
             </ul>
-         </details>
-         <details>
-            <summary>Marathons (2021)</summary>
+
+            <h3>Marathons (2021)</h3>
             <ul>
                <li>- JS Marathon with Zar Zaharov</li>
                <li>- JS Marathon with Vladilen Minin</li>
                <li>- some JS Intensives from Glo Academy</li>
             </ul>
-         </details>
-         <h3>English: A2</h3>
 
-         <section class="code">
-
+            <h3>English: A2(in progress)</h3>
+         </section>
+         <section id="code" class="code">
+            <h2>Code examples</h2>
             <div>
-               <h4>JS-code. Implementation a function that determines whether a string that contains only letters is an
+               <h4>JS-code</h4>
+               <p>Implementation a function that determines whether a string that contains only letters is an
                   isogram.
-               </h4>
+               </p>
                <pre><code>function isIsogram(str) {
    let strNew = str.replace(/[^A-Z]/gi, '').toLowerCase();
    let map = {};
@@ -123,21 +154,25 @@
       let symbol = strNew[i];
       map[symbol] = (map[symbol] || 0) + 1;
       if (map[symbol] > 1) 
-         { return false; }
+         { 
+            return false;
+         }
       }
    return true;
-   }</code>
+}</code>
 </pre>
             </div>
 
             <div>
-               <h4>React-code. Search implementation</h4>
-               <pre> <code>const [value, setValue] = useState('');
-      const filterCharacters = posts.filter(posts => {
-         return posts.name.toLowerCase().includes(value.toLowerCase())
-      })     
-      if (value)
-         return ( &lt;div className='form'&gt;
+               <h4>React-code</h4>
+               <p>Search implementation</p>
+               <pre>
+               <code>const [value, setValue] = useState('');
+const filterCharacters = posts.filter(posts => {
+   return posts.name.toLowerCase().includes(value.toLowerCase())
+   })     
+   if (value)
+      return ( &lt;div className='form'&gt;
                   &lt;form className='searchForm'&gt;
                      &lt;input
                         type='text'
@@ -145,14 +180,15 @@
                         placeholder='Search characters'
                         onChange={(e) => { setValue(e.target.value) }}
                      /&gt;
-                  &lt;/form&gt;
+                     &lt;/form&gt;
                &lt;/div&gt;)
             </code></pre>
             </div>
 
          </section>
+         <section class="projects">
 
-
+         </section>
       </main>
       <footer>
          <span>
