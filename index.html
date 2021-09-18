@@ -4,25 +4,30 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-   <script>hljs.initHighlightingOnLoad();</script>
+
    <title>CV</title>
 </head>
 
-<body>
+<body id="body">
    <div class="wrapper">
       <header class="header">
-         <nav class="nav">
+         <div class="header__burger">
+            <span></span>
+         </div>
+         <nav class="nav" id="navigation">
             <ul class="nav__menu">
-               <li><a>About me</a></li>
-               <li><a>Career</a></li>
-               <li><a>Skills</a></li>
-               <li><a>Code</a></li>
-               <li><a>Projects</a></li>
-               <li><a>Video</a></li>
+               <li><a href="#contacts">About me</a></li>
+               <li><a href="#cereer">Career</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#code">Code</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#video">Video</a></li>
             </ul>
          </nav>
       </header>
@@ -35,7 +40,7 @@
                      <img class="avatar" src="images/avatar.jpg" alt="photo" />
                   </div>
                   <div class="back">
-                     <h3>Contacts</h3>
+                     <h2>Contacts</h2>
                      <p>Location: Minsk, Belarus</p>
                      <p>telegram:
                         <a title="Telegram" href="tg://resolve?domain=Irina_Boozhan">
@@ -82,63 +87,73 @@
                <li>- 2016 to the presen: on maternity leave</li>
             </ul>
          </section>
-         <section id="skils" class="skils">
+         <section id="skills" class="knowleges">
             <h2>Skills and education</h2>
+            <div class="skills__wrapper">
+               <div class="skills">
+                  <h3>Skills</h3>
+                  <ul>
+                     <li>
+                        <p class="skill">
+                           <span class="skill__inner html">
+                              <span class="level">85%</span>HTML
+                           </span>
+                        </p>
+                     </li>
+                     <li>
+                        <p class="skill">
+                           <span class="skill__inner css">
+                              <span class="level">70%</span>CSS3 + SCSS
+                           </span>
+                        </p>
+                     </li>
+                     <li>
+                        <p class="skill">
+                           <span class="skill__inner js">
+                              <span class="level">20%</span>JavaScript
+                           </span>
+                        </p>
+                     </li>
+                     <li>
+                        <p class="skill">
+                           <span class="skill__inner react">
+                              <span class="level">10%</span>React
+                           </span>
+                        </p>
+                     </li>
+                     <li>
+                        <p class="skill">
+                           <span class="skill__inner git">
+                              <span class="level">30%</span>Git
+                           </span>
+                        </p>
+                     </li>
+                  </ul>
+                  <h3>English: A2(in progress)</h3>
+               </div>
+               <div class="certificat">
+                  <h3>Certificate</h3>
+                  <img data-fancybox data-preload="false" data-width="640px" data-height="480px" class="certificat__img"
+                     src="images/certificat.jpg" alt="certificat">
+               </div>
+               <div class="courses">
+                  <h3>Courses</h3>
+                  <ul>
+                     <li>IT College Digital Unicorn «Front-End development» (10.2020-08.2021)</li>
+                     <li>React JS. Practical Course (+ Hooks, Classes, Redux) (from V.Minin, Udemy)</li>
+                     <li>JavaScript 2021 (from V.Minin, Udemy)</li>
+                  </ul>
+               </div>
+               <div class="marathons">
+                  <h3>Marathons (2021)</h3>
+                  <ul>
+                     <li>JS Marathon with Zar Zaharov</li>
+                     <li>JS Marathon with Vladilen Minin</li>
+                     <li>some JS Intensives from Glo Academy</li>
+                  </ul>
+               </div>
+            </div>
 
-            <h3>Skills</h3>
-            <ul>
-               <li>
-                  <p class="skill">
-                     <span class="skill__inner html">
-                        <span class="level">85%</span>HTML
-                     </span>
-                  </p>
-               </li>
-               <li>
-                  <p class="skill">
-                     <span class="skill__inner css">
-                        <span class="level">70%</span>CSS3 + SCSS
-                     </span>
-                  </p>
-               </li>
-               <li>
-                  <p class="skill">
-                     <span class="skill__inner js">
-                        <span class="level">40%</span>JavaScript
-                     </span>
-                  </p>
-               </li>
-               <li>
-                  <p class="skill">
-                     <span class="skill__inner react">
-                        <span class="level">30%</span>React
-                     </span>
-                  </p>
-               </li>
-               <li>
-                  <p class="skill">
-                     <span class="skill__inner git">
-                        <span class="level">30%</span>Git
-                     </span>
-                  </p>
-               </li>
-            </ul>
-
-            <h3>Courses</h3>
-            <ul>
-               <li>- IT College Digital Unicorn «Front-End development» (10.2020-08.2021)</li>
-               <li>- React JS. Practical Course (+ Hooks, Classes, Redux) (from V.Minin, Udemy)</li>
-               <li>- JavaScript 2021 (from V.Minin, Udemy)</li>
-            </ul>
-
-            <h3>Marathons (2021)</h3>
-            <ul>
-               <li>- JS Marathon with Zar Zaharov</li>
-               <li>- JS Marathon with Vladilen Minin</li>
-               <li>- some JS Intensives from Glo Academy</li>
-            </ul>
-
-            <h3>English: A2(in progress)</h3>
          </section>
          <section id="code" class="code">
             <h2>Code examples</h2>
@@ -148,48 +163,99 @@
                   isogram.
                </p>
                <pre><code>function isIsogram(str) {
-   let strNew = str.replace(/[^A-Z]/gi, '').toLowerCase();
-   let map = {};
-   for (let i = 0; i &lt; strNew.length; i++) {
-      let symbol = strNew[i];
-      map[symbol] = (map[symbol] || 0) + 1;
-      if (map[symbol] > 1) 
+      let strNew = str.replace(/[^A-Z]/gi, '').toLowerCase();
+      let map = {};
+      for (let i = 0; i &lt; strNew.length; i++) {
+         let symbol = strNew[i];
+         map[symbol] = (map[symbol] || 0) + 1;
+         if (map[symbol] > 1) 
          { 
             return false;
          }
       }
-   return true;
-}</code>
-</pre>
+      return true;
+      }</code>
+      </pre>
             </div>
 
             <div>
                <h4>React-code</h4>
                <p>Search implementation</p>
-               <pre>
-               <code>const [value, setValue] = useState('');
-const filterCharacters = posts.filter(posts => {
-   return posts.name.toLowerCase().includes(value.toLowerCase())
-   })     
-   if (value)
-      return ( &lt;div className='form'&gt;
-                  &lt;form className='searchForm'&gt;
-                     &lt;input
-                        type='text'
-                        className='searchInput'
-                        placeholder='Search characters'
-                        onChange={(e) => { setValue(e.target.value) }}
-                     /&gt;
-                     &lt;/form&gt;
-               &lt;/div&gt;)
+               <pre><code>const [value, setValue] = useState('');
+      const filterCharacters = posts.filter(posts =&gt;
+         &lt;input {
+         return posts.name.toLowerCase().includes(value.toLowerCase())
+         })     
+         if (value)
+            return ( &lt;div className='form'&gt;
+                        &lt;form className='searchForm'&gt;
+                           &lt;input
+                              type='text'
+                              className='searchInput'
+                              placeholder='Search characters'
+                              onChange={(e) => { setValue(e.target.value) }}
+                           /&gt;
+                           &lt;/form&gt;
+                     &lt;/div&gt;)
             </code></pre>
             </div>
 
          </section>
-         <section class="projects">
+         <section id="projects" class="projects">
+            <h2>My projects</h2>
+            <div class="projects__wrapper">
+               <div class="project mortal">
+                  <h3>Mortal Kombat</h3>
+
+                  <div class="discription">
+                     My first game in JS. I maked Mortal Kombat in ZarZacharov's marathon (JS, HTML, CSS).
+                  </div>
+                  <a target="_blan,k" href=" https://irinaboozhan.github.io/MK/">
+                     <img src="./images/mk.jpg" alt="Mortal Kombat" class="img__project">
+                  </a>
+               </div>
+               <div class="project oils">
+                  <h3>New Energy</h3>
+
+                  <div class="discription">
+                     Small landing page (HTML, SCSS)
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/GRID-SASS/">
+                     <img src="./images/oils.jpg" alt="MotorOil" class="img__project">
+                  </a>
+               </div>
+               <div class="project theatre">
+                  <h3>Grand Theatre</h3>
+
+                  <div class="discription">
+                     Grand Theatre's landing page (HTML CSS)
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/First-project-FLEX-/">
+                     <img src="./images/theater.jpg" alt="Grand Theatre" class="img__project">
+                  </a>
+               </div>
+               <div class="project marvel">
+                  <h3>Marvel</h3>
+                  <div class="discription">
+                     React Application. Working with API (https://developer.marvel.com/), search, pagination, hooks.
+                     <br />
+                     :(The build is incorrectly assembled. I hope I can rebuild it in time.
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/Marvel/">
+                     <img src="./images/marvel.jpg" alt="Marvel" class="img__project">
+                  </a>
+               </div>
+            </div>
+
+
 
          </section>
+         <section id="video" class="video">
+
+         </section>
+         <a href="#body" class="top hidden">Top</a>
       </main>
+
       <footer>
          <span>
             <a class="logo_rsschool" href="https://rs.school/js/" target="_blank">
@@ -202,6 +268,7 @@ const filterCharacters = posts.filter(posts => {
          <span>2021</span>
       </footer>
    </div>
+   <script src="index.js"></script>
 </body>
 
 </html>
