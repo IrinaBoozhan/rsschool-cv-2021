@@ -4,13 +4,75 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+   <script>hljs.initHighlightingOnLoad();</script>
+
+
    <title>CV</title>
 </head>
 
-<body>
+<body id="body">
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__burger">
+            <span></span>
+         </div>
+         <nav class="nav" id="navigation">
+            <ul class="nav__menu">
+               <li><a href="#contacts">About me</a></li>
+               <li><a href="#cereer">Career</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#code">Code</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#video">Video</a></li>
+            </ul>
+         </nav>
+      </header>
 
+      <main>
+         <section id="contacts" class="contacts">
+            <h1>About me</h1>
+         </section>
+         <section id="career" class="career">
+            <h2>Career (not front-end)</h2>
+
+         </section>
+         <section id="skills" class="knowleges">
+            <h2>Skills and education</h2>
+
+         </section>
+         <section id="code" class="code">
+            <h2>Code examples</h2>
+
+         </section>
+         <section id="projects" class="projects">
+            <h2>My projects</h2>
+
+         </section>
+         <section id="video" class="video">
+            <h2>Self-presentation</h2>
+
+         </section> <a href="#body" class="top hidden">Top</a>
+      </main>
+
+      <footer class="footer">
+         <span>
+            <a class="logo_rsschool" href="https://rs.school/js/" target="_blank">
+               <img src="images/rs_school_js.svg" alt="logo_rsschool">
+            </a>
+         </span>
+         <span class='githab'>
+            <a href="https://github.com/IrinaBoozhan" target="_blank">I'm in GitHub</a>
+         </span>
+         <span>2021</span>
+      </footer>
+   </div>
+   <script src="index.js"></script>
 </body>
 
 </html>
