@@ -6,6 +6,9 @@
    /* --dark-color: #490581; */
 }
 
+html {
+   scroll-behavior: smooth;
+}
 *,
 *::before,
 *::after {
@@ -54,6 +57,7 @@ main {
    max-width: 1100px;
    margin: auto;
    position: relative;
+   scroll-behavior: smooth;
 }
 section {
    margin-top: 40px;
@@ -69,9 +73,12 @@ a:active {
 
 .header,
 .footer {
-   margin: 25px 0 50px 0;
+   margin: 25px 0;
 }
-
+.header {
+   padding-bottom: 20px;
+   border-bottom: 1px solid var(--dark-color);
+}
 .nav__menu {
    display: flex;
    flex-direction: row;
@@ -116,7 +123,7 @@ a:active {
    border: 1px solid var(--dark-color);
    position: relative;
    width: 288px;
-   height: 368px;
+   height: 375px;
    -webkit-transform-style: preserve-3d;
    -webkit-transition: 0.7s linear;
 }
@@ -142,6 +149,9 @@ a:active {
    color: var(--dark-color);
    font-size: medium;
    text-align: left;
+}
+.back a {
+   color: #000;
 }
 .contacts__avatar:hover .flipper {
    -webkit-transform: rotateY(180deg);
@@ -269,13 +279,10 @@ code {
    padding: 10px;
    border: 2px solid var(--dark-color);
    text-align: center;
-   right: 50px;
+   right: calc(50% - 650px);
    bottom: 40px;
    z-index: 5;
    position: fixed;
-}
-a.top {
-   color: var(--light-color);
 }
 
 .logo_rsschool {
@@ -291,6 +298,15 @@ a.top {
    width: 100%;
    display: flex;
    justify-content: space-around;
+   padding-top: 20px;
+   border-top: 1px solid var(--dark-color);
+}
+
+@media (max-width: 1350px) {
+   .top {
+      right: calc(50% - 530px);
+      bottom: 100px;
+   }
 }
 
 @media (max-width: 1100px) {
@@ -308,7 +324,7 @@ a.top {
       float: right;
       margin-top: 15px;
       width: 220px;
-      height: 300px;
+      height: 285px;
    }
    .contacts__content {
       max-width: 100%;
@@ -343,12 +359,19 @@ a.top {
       width: 100%;
    }
    .certificat__img {
-      width: 400px;
+      width: 380px;
    }
    .avatar {
       width: 100%;
    }
    .top {
+      right: calc(50% - 450px);
+      bottom: 100px;
+   }
+}
+@media (max-width: 900px) {
+   .top {
+      right: calc(50% - 400px);
       bottom: 100px;
    }
 }
@@ -429,6 +452,11 @@ a.top {
    .nav li {
       width: 200px;
    }
+
+   .back {
+      font-size: 14px;
+   }
+
    .skills__wrapper {
       gap: 30px;
       grid-template-columns: 1fr;
@@ -477,6 +505,9 @@ a.top {
    .avatar {
       width: 100%;
    }
+   .footer {
+      padding-top: 20px;
+   }
 }
 
 @media (max-width: 510px) {
@@ -503,7 +534,9 @@ a.top {
    .certificat__img,
    .img__project {
       width: 300px;
-      /* margin-left: 5px; */
+   }
+   .back {
+      font-size: 12px;
    }
    .discription {
       max-width: 305px;

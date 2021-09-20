@@ -56,7 +56,8 @@
                               irina.boozhan@gmail.com
                            </a>
                         </p>
-                        <p>phone: +375 29 5736578</p>
+                        <p>phone: <a href="#">+375 29 5736578</a></p>
+
                      </div>
                   </div>
                </div>
@@ -171,20 +172,22 @@
                </p>
                <pre><code>
 function isIsogram(str) {
- let strNew = str.replace(/[^A-Z]/gi,'')
-   .toLowerCase();
-   let map = {};
-   for (let i = 0; i&lt;strNew.length; i++) 
-   {
-   let symbol = strNew[i];
-   map[symbol] = (map[symbol] || 0)+1;
-   if (map[symbol] > 1) 
-      { 
-         return false;
-      }
-   }
-   return true;
-   }</code>
+let strNew = str.replace(/[^A-Z]/gi,'')
+.toLowerCase();
+  let map = {};
+  for (let i = 0; i&lt;strNew.length; i++) 
+  {
+  let symbol = strNew[i];
+  map[symbol] = (map[symbol] || 0)+1;
+  if (map[symbol] > 1) 
+     { 
+        return false;
+     }
+  }
+  return true;
+  }
+
+</code>
       </pre>
             </div>
 
@@ -194,25 +197,25 @@ function isIsogram(str) {
                <pre><code>
 const [value, setValue] = useState('');
 const filterCharacters = 
-   posts.filter(posts =&gt;
-   &lt;input {
-   return posts.name.toLowerCase()
-   .includes(value.toLowerCase())
-   })     
-   if (value)
-      return ( &lt;div className='form'&gt;
-         &lt;form className='searchForm'&gt;
-            &lt;input
-            type='text'
-            className='searchInput'
-            placeholder='Search'
-            onChange={(e) => {
-               setValue(e.target.value)
-            }}
-            /&gt;
-         &lt;/form&gt;
-         &lt;/div&gt;)
-      </code></pre>
+  posts.filter(posts =&gt;
+  &lt;input {
+  return posts.name.toLowerCase()
+  .includes(value.toLowerCase())
+  })     
+  if (value)
+   return ( &lt;div className='form'&gt;
+      &lt;form className='searchForm'&gt;
+         &lt;input
+         type='text'
+         className='searchInput'
+         placeholder='Search'
+         onChange={(e) => {
+            setValue(e.target.value)
+         }}
+         /&gt;
+      &lt;/form&gt;
+      &lt;/div&gt;)
+         </code></pre>
             </div>
 
          </section>
@@ -225,7 +228,7 @@ const filterCharacters =
                   <div class="discription">
                      My first game in JS. I maked Mortal Kombat in ZarZacharov's marathon (JS, HTML, CSS).
                   </div>
-                  <a target="_blan,k" href=" https://irinaboozhan.github.io/MK/">
+                  <a target="_blank" href=" https://irinaboozhan.github.io/MK/">
                      <img src="./images/mk.jpg" alt="Mortal Kombat" class="img__project">
                   </a>
                </div>
@@ -263,7 +266,8 @@ const filterCharacters =
             </div>
          </section>
          <section id="video" class="video">
-
+            <h2>Self-presentation</h2>
+            <mark>Sorry, but there will be no video</mark>
          </section>
          <a href="#body" class="top hidden">Top</a>
       </main>
