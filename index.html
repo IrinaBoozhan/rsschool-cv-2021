@@ -162,16 +162,111 @@
          </section>
          <section id="code" class="code">
             <h2>Code examples</h2>
+            <div>
+               <h4>JS-code</h4>
+               <p>Implementation a function that determines whether a string that contains only letters is an
+                  isogram.
+               </p>
+               <pre><code>
+function isIsogram(str) {
+let strNew = str.replace(/[^A-Z]/gi,'')
+.toLowerCase();
+  let map = {};
+  for (let i = 0; i&lt;strNew.length; i++) 
+  {
+  let symbol = strNew[i];
+  map[symbol] = (map[symbol] || 0)+1;
+  if (map[symbol] > 1) 
+     { 
+        return false;
+     }
+  }
+  return true;
+  }
+
+</code>
+      </pre>
+            </div>
+
+            <div>
+               <h4>React-code</h4>
+               <p>Search implementation</p>
+               <pre><code>
+const [value, setValue] = useState('');
+const filterCharacters = 
+  posts.filter(posts =&gt;
+  &lt;input {
+  return posts.name.toLowerCase()
+  .includes(value.toLowerCase())
+  })     
+  if (value)
+   return ( &lt;div className='form'&gt;
+      &lt;form className='searchForm'&gt;
+         &lt;input
+         type='text'
+         className='searchInput'
+         placeholder='Search'
+         onChange={(e) => {
+            setValue(e.target.value)
+         }}
+         /&gt;
+      &lt;/form&gt;
+      &lt;/div&gt;)
+         </code></pre>
+            </div>
 
          </section>
          <section id="projects" class="projects">
             <h2>My projects</h2>
+            <div class="projects__wrapper">
+               <div class="project mortal">
+                  <h3>Mortal Kombat</h3>
 
+                  <div class="discription">
+                     My first game in JS. I maked Mortal Kombat in ZarZacharov's marathon (JS, HTML, CSS).
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/MK/">
+                     <img src="./images/mk.jpg" alt="Mortal Kombat" class="img__project">
+                  </a>
+               </div>
+               <div class="project oils">
+                  <h3>New Energy</h3>
+
+                  <div class="discription">
+                     Small landing page (HTML, SCSS)
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/GRID-SASS/">
+                     <img src="./images/oils.jpg" alt="MotorOil" class="img__project">
+                  </a>
+               </div>
+               <div class="project theatre">
+                  <h3>Grand Theatre</h3>
+
+                  <div class="discription">
+                     Grand Theatre's landing page (HTML CSS)
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/First-project-FLEX-/">
+                     <img src="./images/theater.jpg" alt="Grand Theatre" class="img__project">
+                  </a>
+               </div>
+               <div class="project marvel">
+                  <h3>Marvel</h3>
+                  <div class="discription">
+                     React Application. Working with API (https://developer.marvel.com/), search, pagination, hooks.
+                     <br />
+                     :(The build is incorrectly assembled. I hope I can rebuild it in time.
+                  </div>
+                  <a target="_blank" href=" https://irinaboozhan.github.io/Marvel/">
+                     <img src="./images/marvel.jpg" alt="Marvel" class="img__project">
+                  </a>
+               </div>
+            </div>
          </section>
          <section id="video" class="video">
             <h2>Self-presentation</h2>
-
-         </section> <a href="#body" class="top hidden">Top</a>
+            <mark>Sorry, but there will be no video</mark>
+         </section>
+         <a href="#body" class="top hidden">Top</a>
       </main>
 
       <footer class="footer">
